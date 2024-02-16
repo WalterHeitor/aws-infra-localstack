@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: helloworld.App
+      CodeUri: /home/walter/Área de Trabalho/Projetos/localstack/aws-pub-sub-main/hellowordwalter/HelloWorldFunction
+      Runtime: java17
+      Architectures:
+        - x86_64
